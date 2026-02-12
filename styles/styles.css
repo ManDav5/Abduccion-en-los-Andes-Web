@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #B5A8AA;
+    font-family: "Hind Guntur", sans-serif;
+}
+
+section{
+    margin: 2rem;
+}
+
+h1
+{color:white;
+text-transform: uppercase;
+font-family: "Oswald", sans-serif;
+}
+
+#titulo-home{
+    font-size: 6rem;
+}
+
+h2{
+    color: #1C0804;
+    text-transform: uppercase;
+    font-family: "Hind Guntur", sans-serif;
+}
+
+h3{
+    color: #1C0804;
+    text-transform: capitalize;
+}
+
+p{
+    color: #1C0804;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button{
+    background-color: whitesmoke;
+}
+
+nav{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-size: cover;
+    background-color: #1C0804;
+   display:flex;
+   flex-direction:row;
+   justify-content: space-between;
+   align-items: center;
+   ul{
+    a{
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+   }
+   #logo-juego{
+    height: 40px;
+   }
+}
+
+.main-hero{
+    background-image:url(../assets/main-hero.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    text-align:left;
+    block-size: 32rem;
+    padding-left: 2rem;
+    display:flex;
+    align-items: last baseline;
+}
+
+.secondary-hero{
+    background-image:url(../assets/secondary-hero.avif);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    block-size: 8rem;
+    padding-left: 2rem;
+    display:flex;
+    align-items: last baseline
+}
+
+footer{
+    background-color: #1C0804;
+    p{color: #B5A8AA;}
+}
+
+#icon-steam{
+    width: 32px;
+    height: 32px;
+    color: #B5A8AA;
+    filter: invert(70%);
+}
+
+#icon-xbox{
+    width: 32px;
+    height: 32px;
+    color: #B5A8AA;
+    filter: invert(70%);
+}
+
+#icon-epic{
+    width: 32px;
+    height: 32px;
+    color: #B5A8AA;
+    filter: invert(70%);
+}
+
+#icon-twitter{
+    height: 32px;
+    color: #B5A8AA;
+    filter: invert(30%);    
+}
+
+#icon-google{
+    height: 32px;
+    color: #B5A8AA;
+    filter: invert(30%);
+}
+
+#icon-facebook{
+    height: 44px;
+    color: #B5A8AA;
+    filter: invert(30%);
+}
+
+#icon-comment{
+    height: 32px;
+    color: #B5A8AA;
+    filter: invert(30%);
+}
+
+.nav-numeros{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    align-items: baseline;
+}
+
+.nav-numeros-li{
+    width: 5px;
+    height: 25px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: #1C0804 solid;
+    border-radius: 50px;
+}
+
+.contenedor-cards{
+       border: #1C0804 solid;
+       border-radius: 30px;
+       padding: 1rem;
+}
+
+.contenedor-cards-card{
+    border: #573731 solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.like-comment-share{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.like-status{
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.comment-status{
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.share-status{
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-foro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "foro-discusiones foro-discusiones foro-sidebar";
+}
+
+.foro-discusiones{
+    grid-area: foro-discusiones;
+}
+
+.foro-sidebar{
+    grid-area: foro-sidebar;
+}
