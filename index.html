@@ -13,11 +13,11 @@
 
 <!-- HOME / NAV BAR -->
 
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-between">
             <a href="#" class="navbar-brand">
-                <img src="logo.jpg" alt="Abducción en los Andes Logo" width="30" height="24" class="d-inline-block align-top"/>
-                Abducción en los Andes
+                <img src="assets/Abduccionenlosandes_Logo.svg" alt="Abducción en los Andes Logo" width="30" height="24" class="d-inline-block align-top ms-4"/>
+                
             </a>
             <button
             class="navbar-toggler" 
@@ -31,21 +31,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li>
-                        <a class="nav-link" href="#">Inicio</a>
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="#">Inicio</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="pages/diario.html">Diario</a>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="pages/diario.html">Diario</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="pages/foro.html">Foro</a>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="pages/foro.html">Foro</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="pages/login.html">Login</a>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="pages/login.html">Login</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="pages/comprar.html">Comprar</a>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="pages/comprar.html">Comprar</a>
                     </li>
                 </ul>
             </div>
@@ -54,17 +54,17 @@
 
 <!-- HOME / HERO -->
 
-    <div class="container-fluid h-50">
+    <div class="container-fluid main-hero">
         <header class="row">
             <div class="col-12">
-                <h1>ABDUCCIÓN EN LOS ANDES</h1>
+                <h1 class="titulo-home">ABDUCCIÓN<br>EN LOS ANDES</h1>
             </div>
         </header>
     </div>
 
 <!-- HOME / SECCIÓN 1 / SOBRE EL JUEGO -->
 
-        <section class="container">
+        <section class="container mt-5">
             <div class="row">
                 <div class="col-12">
                     <h2>SOBRE EL JUEGO</h2>
@@ -82,7 +82,7 @@
 
 <!-- HOME / SECCIÓN 2 / CARACTERÍSTICAS PRINCIPALES -->
 
-    <section class="container">
+    <section class="container mt-5">
         <div class="row g-3">
             
             <div class="col-12">
@@ -124,7 +124,7 @@
 
 <!-- HOME / SECCIÓN 3 / REQUISITOS DEL SISTEMA -->
 
-    <section class="container">
+    <section class="container mt-5 mb-5">
         <div class="row">
             <div class="col-12">
                 <h2>REQUISITOS DEL SISTEMA</h2>
@@ -132,7 +132,7 @@
             
             <div class="col-12 col-md-6 col-lg-6 g-3">
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="MD-table-requisitos table">
                         <tr>
                             <th>REQUISITOS MÍNIMOS</th>
                         </tr>
@@ -154,7 +154,7 @@
 
             <div class="col-12 col-md-6 col-lg-6 g-3">
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="MD-table-requisitos table">
                         <tr>
                             <th>REQUISITOS RECOMENDADOS</th>
                         </tr>
@@ -179,24 +179,24 @@
 
 <!-- HOME / FOOTER -->
 
-    <section class="container-fluid">
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <p>Adquiere Abducción en los Andes en:</p>
+                <p class="mt-4 mb-5 MD-footer-texto1">Adquiere Abducción en los Andes en:</p>
             </div>
-            <div class="col-12 d-flex justify-content-evenly">
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
                 <div>
-                    <a class="nav-link" href="#"><i class="bi bi-steam"></i></a>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-steam"></i></a>
                 </div>
                 <div>
-                    <a class="nav-link" href="#"><i class="bi bi-xbox"></i></a>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-xbox"></i></a>
                 </div>
                 <div>
-                    <a class="nav-link" href="#"><i class="bi bi-playstation"></i></a>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-playstation"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
