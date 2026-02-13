@@ -4,67 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abducción en los Andes | Diario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<!-- Body -------------------------------------------------------->
 <body>
 
-<!-- Header -------------------------------------------------------->
-    <header>
-        <div class="topnavbar">
-            <nav>
-                <img src="../assets/logo-juego.png" alt="imagen del logo" id="logo-juego">
-                <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Diario</a></li>
-                <li><a href="./foro.html">Foro</a></li>
-                <li><a href="./login.html">LogIn</a></li>
-                <li><a href="./comprar.html">Comprar</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="secondary-hero">
-            <h1>Diario de desarrollo</h1>
-        </div>
-    </header>
+<!-- DIARIO / NAV BAR -->
 
-<!-- Main ---------------------------------------------------->
-    <main class="main-diario">
-        <section>
-            <div>
-                <h2>Diario de desarrollo 1</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptatibus cum alias cumque id ratione eligendi quas aliquid unde atque hic expedita totam, optio perferendis asperiores! Debitis earum ut facere?
-                </p>
-                <img src="../assets/diario1.jpg" alt="descripción de imágen de diario 1">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-between">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/Abduccionenlosandes_Logo.svg" alt="Abducción en los Andes Logo" width="30" height="24" class="d-inline-block align-top ms-4"/>
+                
+            </a>
+            <button
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="#">Diario</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./foro.html">Foro</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./comprar.html">Comprar</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <h2>Diario de desarrollo 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, distinctio dicta recusandae sapiente ipsum provident, blanditiis aut illum doloribus qui esse sint? Voluptate incidunt modi voluptas sapiente reiciendis eveniet eum!
-                </p>
-                <img src="../assets/diario2.jpg" alt="descripción de imágen de diario 2">
+        </nav>
+    </div>
+
+<!-- DIARIO / HERO -->
+
+    <div class="container-fluid secondary-hero">
+        <header class="row">
+            <div class="col-12">
+                <h1>DIARIO DE DESARROLLO</h1>
             </div>
-            <div>
-                <h2>Diario de desarrollo 3</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi esse, facilis, et iste ex sed, suscipit perferendis fugiat aliquam ducimus repellat debitis nam cum totam quo. Temporibus aspernatur iusto eveniet.
-                </p>
-                <img src="../assets/diario3.webp" alt="descripción de imágen de diario 3">
+        </header>
+    </div>
+
+<!-- DIARIO / SECCTION 1 / DIARIO -->
+
+    <div class="container mt-4">
+        <section class="row">
+            <div class="col-12">
+                <ul class="nav nav-underline mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">...</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">25</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <h2 class="col-12">DIARIO DE DESARROLLO 3</h2>
+                    <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio in atque, commodi quis consectetur nesciunt repellat recusandae blanditiis, ipsam, esse quod delectus deserunt cumque consequatur dolor fuga eligendi praesentium veritatis?</p>
+                    <img class="col-12" src="../assets/diario3.webp" alt="descripción de la imágen del diario 3">
+                </div>
+                <div class="row">
+                    <h2 class="col-12 g-4">DIARIO DE DESARROLLO 2</h2>
+                    <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio in atque, commodi quis consectetur nesciunt repellat recusandae blanditiis, ipsam, esse quod delectus deserunt cumque consequatur dolor fuga eligendi praesentium veritatis?</p>
+                    <img class="col-12" src="../assets/diario2.jpg" alt="descripción de la imágen del diario 2">
+                </div>
+                <div class="row">
+                    <h2 class="col-12 g-4">DIARIO DE DESARROLLO 1</h2>
+                    <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio in atque, commodi quis consectetur nesciunt repellat recusandae blanditiis, ipsam, esse quod delectus deserunt cumque consequatur dolor fuga eligendi praesentium veritatis?</p>
+                    <img class="col-12" src="../assets/diario1.jpg" alt="descripción de la imágen del diario 1">
+                </div>
             </div>
         </section>
-    </main>
+    </div>
 
-<!-- Footer ----------------------------------->
-    <footer>
-        <p>Adquiere abducción en los Andes en:</p>
-        <div>
-            <img src="../assets/iconlinksteam.webp" alt="ícono de steam" id="icon-steam">
-            <img src="../assets/iconlinkxbox.png" alt="ícono de xbox" id="icon-xbox">
-            <img src="../assets/iconlinkepic.png" alt="ícono de epic games" id="icon-epic">
+<!-- DIARIO / FOOTER -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="mt-4 mb-5 MD-footer-texto1">Adquiere Abducción en los Andes en:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-steam"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-xbox"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-playstation"></i></a>
+                </div>
+            </div>
         </div>
-        <p>Todos los derechos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

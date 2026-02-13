@@ -4,64 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abducción en los Andes | LogIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<!-- Body -------------------------------------------------------->
 <body>
 
-<!-- Header -------------------------------------------------------->
-    <header>
-        <div>
-            <nav class="topnavbar">
-                <img src="../assets/logo-juego.png" alt="imagen del logo" id="logo-juego">
-                <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./diario.html">Diario</a></li>
-                <li><a href="./foro.html">Foro</a></li>
-                <li><a href="#">LogIn</a></li>
-                <li><a href="./comprar.html">Comprar</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="secondary-hero">
-            <h1>Login</h1>
-        </div>
-    </header>
+<!-- LOGIN / NAV BAR -->
 
-<!-- Main ----------------------------------->
-    <main class="main-login">
-        <h2>Ingresa</h2>
-        <section>
-            <div>
-                <form action="">
-                    <label for="emailinput">email</label>
-                    <input type="emailinput" name="emailinput" id="email">
-                    <label for="password">Contraseña</label>
-                    <input type="password">
-                    <input type="submit">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-between">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/Abduccionenlosandes_Logo.svg" alt="Abducción en los Andes Logo" width="30" height="24" class="d-inline-block align-top ms-4"/>
+                
+            </a>
+            <button
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./diario.html">Diario</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./foro.html">Foro</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="#">Login</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./comprar.html">Comprar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- LOGIN / HERO -->
+
+    <div class="container-fluid secondary-hero">
+        <header class="row">
+            <div class="col-12">
+                <h1>Login</h1>
+            </div>
+        </header>
+    </div>
+
+<!-- LOGIN / SECCTION 1 / LOGIN -->
+
+    <div class="MD-form-box d-flex justify-content-center and align-items-center mt-4 p-4 p-sm-3">
+        <div class="row">
+            <div class="col-12 container text-center">
+                <h2>INGRESA</h2>
+            </div>
+            <div class="col-12">
+                <form class="p-4 p-sm-3" action="">
+                    <div class="mb-3">
+                        <label for="MD-correoelectronico" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="MD-correoelectronico" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de Correo.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="MD-password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="MD-password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="MD-recuerdame">
+                        <label class="form-check-label" for="MD-recuerdame">Recuerdame</label>
+                    </div>
+                    <div class="row ms-4 me-4 d-flex justify-content-center">
+                        <button type="submit" class="col-6 btn MD-btn-primary btn-primary mb-2">Ingresar</button>
+                        <button type="submit" class="col-12 btn MD-btn-link btn-link">
+                            <a class="MD-btn-link" href="signin.html">Regístrate</a>
+                        </button>
+                    </div>
                 </form>
-                <a href="signin.html">Regístrate</a>
-                <p>o ingresa con</p>
+            </div>
+            <div class="col-12">
+                <p class="MD-footer-texto1 container text-center">o ingresa con</p>
+            </div>
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
                 <div>
-                    <a href="sinlinktwitter"><img src="../assets/icontwitter.png" alt="ícono de twitter" id="icon-twitter"></a>
-                    <a href="sinlinkgoogle"><img src="../assets/icongoogle.png" alt="ícono de google" id="icon-google"></a>
-                    <a href="sinlinkfacebook"><img src="../assets/iconfacebook.png" alt="ícono de facebook" id="icon-facebook"></a>
+                    <a class="nav-link MD-login-socialmedia" href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-login-socialmedia" href="#"><i class="bi bi-google"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-login-socialmedia" href="#"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
-        </section>
-    </main>
-    
-<!-- Footer ----------------------------------->
-
-    <footer>
-        <p>Adquiere abducción en los Andes en:</p>
-        <div>
-            <img src="../assets/iconlinksteam.webp" alt="ícono de steam" id="icon-steam">
-            <img src="../assets/iconlinkxbox.png" alt="ícono de xbox" id="icon-xbox">
-            <img src="../assets/iconlinkepic.png" alt="ícono de epic games" id="icon-epic">
         </div>
-        <p>Todos los derechos reservados</p>
+    </div>
+
+<!-- LOGIN / FOOTER -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="mt-4 mb-5 MD-footer-texto1">Adquiere Abducción en los Andes en:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-steam"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-xbox"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-playstation"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

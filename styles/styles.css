@@ -67,6 +67,15 @@ nav{
     font-size: 2.25rem;
 }
 
+.MD-login-socialmedia{
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.MD-login-socialmedia:hover{
+    color:black;
+}
+
 .main-hero{
     background-color: black;
     background-size: cover;
@@ -85,8 +94,9 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     text-align: left;
-    block-size: 8rem;
+    block-size: 9rem;
     padding-left: 2rem;
+    padding-bottom: 1rem;
     display:flex;
     align-items: last baseline
 }
@@ -227,4 +237,30 @@ footer{
 /* Fondo de tabla personalizado--PROFES, ESTO LO GOOGLEE PERO LO APLIQUÉ SIN ENTENDER QUÉ SIGNIFICA ESA PROPIEDAD, Pero funciona. */
 .MD-table-requisitos{
     --bs-table-bg:whitesmoke;
+}
+
+.MD-form-box{
+    min-height: 80vh;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.MD-btn-primary{
+    background-color:black ;
+    border-color: black;
+}
+
+.MD-btn-primary:hover{
+    background-color:rgb(187, 16, 16);
+    border-color: rgb(187, 16, 16);
+}
+
+.MD-btn-link{
+    text-decoration-color:black;
+    color: black;
+}
+
+.MD-btn-link:hover{
+    text-decoration-color:rgb(187, 16, 16);
+    color:rgb(187, 16, 16);
 }

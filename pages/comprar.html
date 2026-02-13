@@ -4,59 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abducción en los Andes | Comprar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<!-- Body -------------------------------------------------------->
 <body>
 
-<!-- Header -------------------------------------------------------->
-    <header>
-        <div>
-            <nav class="topnavbar">
-                <img src="../assets/logo-juego.png" alt="imagen del logo" id="logo-juego">
-                <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./diario.html">Diario</a></li>
-                <li><a href="./foro.html">Foro</a></li>
-                <li><a href="./login.html">LogIn</a></li>
-                <li><a href="#">Comprar</a></li>
+<!-- COMPRAR / NAV BAR -->
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-between">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/Abduccionenlosandes_Logo.svg" alt="Abducción en los Andes Logo" width="30" height="24" class="d-inline-block align-top ms-4"/>
+                
+            </a>
+            <button
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./diario.html">Diario</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./foro.html">Foro</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="#">Comprar</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="secondary-hero">
-            <h1>Compra abducción en los andes</h1>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
 
-<!-- Main ----------------------------------->
-    <main class="main-comprar">
-        <h2>Adquiere Abducción en los Andes</h2>
-        <section>
-            <h3>Pagar $50.00</h3>
-            <form action="">Ingresa tus datos
-                <label for="emailinput">email</label>
-                <input type="emailinput">
-                <label for="numerodetarjetainput">Número de tarjeta</label>
-                <input type="numerodetarjetainput">
-                <label for="date">Expiración</label>
-                <input type="date">
-                <label for="cvvinput">CVV</label>
-                <input type="cvvinput">
-                <input type="submit">
-            </form>
-        </section>
-    </main>
+<!-- COMPRAR / HERO -->
 
-<!-- Footer ----------------------------------->
-    <footer>
-        <p>Adquiere abducción en los Andes en:</p>
-        <div>
-            <img src="../assets/iconlinksteam.webp" alt="ícono de steam" id="icon-steam">
-            <img src="../assets/iconlinkxbox.png" alt="ícono de xbox" id="icon-xbox">
-            <img src="../assets/iconlinkepic.png" alt="ícono de epic games" id="icon-epic">
+    <div class="container-fluid secondary-hero">
+        <header class="row">
+            <div class="col-12">
+                <h1>COMPRA EL JUEGO</h1>
+            </div>
+        </header>
+    </div>
+
+<!-- COMPRAR / SECCTION 1 / FORMULARIO COMPRAR -->
+
+    <div class="MD-form-box d-flex justify-content-center and align-items-center mt-4 p-4 p-sm-3">
+        <div class="row">
+            <div class="col-12 container text-center">
+                <h2>PAGAR: $50.00</h2>
+            </div>
+            <div class="col-12">
+                <form class="p-4 p-sm-3" action="">
+                    <div class="mb-3">
+                        <label for="MD-correoelectronico" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="MD-correoelectronico">
+                    </div>
+                    <div class="mb-3">
+                        <label for="MD-tarjeta" class="form-label">Número de Tarjeta</label>
+                        <input type="number" class="form-control" id="MD-tarjeta">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="MD-expiracion" class="form-label">Expiración</label>
+                            <input type="date" class="form-control" id="MD-expiracion">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="MD-cvv" class="form-label">CVV</label>
+                            <input type="number" class="form-control" id="MD-cvv">
+                        </div>
+                    </div>
+                    <div class="row mt-4 ms-2 me-2 d-flex justify-content-center">
+                        <button type="submit" class="col-12 btn MD-btn-primary btn-primary mb-2">Pagar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <p>Todos los derechos reservados</p>
+    </div>
+
+<!-- LOGIN / FOOTER -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="mt-4 mb-5 MD-footer-texto1">Adquiere Abducción en los Andes en:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-steam"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-xbox"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-playstation"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
