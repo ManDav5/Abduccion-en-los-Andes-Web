@@ -4,158 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abducción en los Andes | Foro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<!-- Body -------------------------------------------------------->
 <body>
 
-<!-- Header -------------------------------------------------------->
-    <header>
-        <div class="topnavbar">
-            <nav>
-                <img src="../assets/logo-juego.png" alt="imagen del logo" id="logo-juego">
-                <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./diario.html">Diario</a></li>
-                <li><a href="#">Foro</a></li>
-                <li><a href="./login.html">LogIn</a></li>
-                <li><a href="./comprar.html">Comprar</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="secondary-hero">
-            <h1>Foro</h1>
-        </div>
-    </header>
+ <!-- FORO / NAV BAR -->
 
-<!-- Main ----------------------------------->
-    <main class="main-foro">
-        <section class="foro-discusiones">
-            <h2>Discusiones</h2>
-
-            <!-- tabs de navegación de foro -->
-            <div> 
-                <ul class="nav-numeros">
-                    <li class="nav-numeros-li"><a href="#">1</a></li>
-                    <li class="nav-numeros-li"><a href="#tab2">2</a></li>
-                    <li class="nav-numeros-li"><a href="#tab3">3</a></li>
-                    <li class="nav-numeros-li"><p>...</p></li>
-                    <li class="nav-numeros-li"><a href="#tab25">25</a></li>
-                </ul>
-            </div>
-
-            <!-- Contenedor de enlaces a discusiones -->
-            <div class="contenedor-cards">
-                <a href="forotema1.html">
-                    <div class="contenedor-cards-card">
-                        <h3>Título de tema 1</h3>
-                        <p>preview clave del texto del tema 1</p>
-                        <div class="like-comment-share">
-                            <div class="like-status"><button>like</button><span>10</span></div>
-                            <div class="comment-status"><img src="../assets/icon-comment.png" alt="ícono de mensaje" id="icon-comment"><span>120</span></div>
-                            <div class="share-status"><button>share</button><span>5</span></div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="forotema1.html">
-                    <div class="contenedor-cards-card">
-                        <h3>Título de tema 2</h3>
-                        <p>preview clave del texto del tema 2</p>
-                        <div class="like-comment-share">
-                            <div class="like-status"><button>like</button><span>10</span></div>
-                            <div class="comment-status"><img src="../assets/icon-comment.png" alt="ícono de mensaje" id="icon-comment"><span>120</span></div>
-                            <div class="share-status"><button>share</button><span>5</span></div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="forotema1.html">
-                    <div class="contenedor-cards-card">
-                        <h3>Título de tema 3</h3>
-                        <p>preview clave del texto del tema 3</p>
-                        <div class="like-comment-share">
-                            <div class="like-status"><button>like</button><span>10</span></div>
-                            <div class="comment-status"><img src="../assets/icon-comment.png" alt="ícono de mensaje" id="icon-comment"><span>120</span></div>
-                            <div class="share-status"><button>share</button><span>5</span></div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="forotema1.html">
-                    <div class="contenedor-cards-card">
-                        <h3>Título de tema 4</h3>
-                        <p>preview clave del texto del tema 4</p>
-                        <div class="like-comment-share">
-                            <div class="like-status"><button>like</button><span>10</span></div>
-                            <div class="comment-status"><img src="../assets/icon-comment.png" alt="ícono de mensaje" id="icon-comment"><span>120</span></div>
-                            <div class="share-status"><button>share</button><span>5</span></div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="forotema1.html">
-                    <div class="contenedor-cards-card">
-                        <h3>Título de tema 5</h3>
-                        <p>preview clave del texto del tema 5</p>
-                        <div class="like-comment-share">
-                            <div class="like-status"><button>like</button><span>10</span></div>
-                            <div class="comment-status"><img src="../assets/icon-comment.png" alt="ícono de mensaje" id="icon-comment"><span>120</span></div>
-                            <div class="share-status"><button>share</button><span>5</span></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-            <!-- tabs de navegación de foro - pie de página -->
-            <div> 
-                <ul class="nav-numeros">
-                    <li class="nav-numeros-li"><a href="#">1</a></li>
-                    <li class="nav-numeros-li"><a href="#tab2">2</a></li>
-                    <li class="nav-numeros-li"><a href="#tab3">3</a></li>
-                    <li class="nav-numeros-li"><p>...</p></li>
-                    <li class="nav-numeros-li"><a href="#tab25">25</a></li>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-between">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/Abduccionenlosandes_Logo.svg" alt="Abducción en los Andes Logo" width="30" height="24" class="d-inline-block align-top ms-4"/>
+                
+            </a>
+            <button
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto me-4 text-center">
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./diario.html">Diario</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="#">Foro</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link MD-navbar-button" href="./comprar.html">Comprar</a>
+                    </li>
                 </ul>
             </div>
-        </section>
+        </nav>
+    </div>
 
-        <!-- Panel lateral------------ -->
-        <div class="foro-sidebar">
-            <section class="foro-sidebar-buscar">
-                <h2>Buscar</h2>
-                <div>
-                    <input type="text">
-                    <button>Buscar</button>
+<!-- FORO / HERO -->
+
+    <div class="container-fluid secondary-hero">
+        <header class="row">
+            <div class="col-12">
+                <h1>FORO</h1>
+            </div>
+        </header>
+    </div>
+
+<!-- FORO / CONTENIDO -->
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- FORO / CONTENIDO / SECCIÓN 1 - CARDS DE TEMAS -->
+            <section class="col-12 col-md-8">
+                <!-- navegación numérica -->
+                <div class="row">
+                    <h2 class="col-6">Discusiones</h2>
+                    <div class="col-6">
+                        <ul class="nav nav-underline mb-2 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">...</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">25</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- contenedor de cards -->
+                <div class="col-12 mb-4 ps-3 pe-3 border rounded MD-shadow-box-2">
+                    <div class="card mb-3 mt-3 MD-shadow-box">
+                        <div class="card-body">
+                            <a class="nav-link" href="./forotema1.html">
+                                <h5 class="card-title">Foro tema 1</h5>
+                                <p class="card-text mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam voluptatum culpa tenetur, ullam consectetur est sequi laboriosam quidem, soluta, et nihil excepturi modi enim harum. Nobis rerum ullam obcaecati.
+                                </p>
+                            </a>
+                            <div class="row">
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-hand-thumbs-up"></i> 10
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-chat-left-fill"></i> 120
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-send-fill"></i> 5
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 mt-3 MD-shadow-box">
+                        <div class="card-body">
+                            <a class="nav-link" href="./forotema1.html">
+                                <h5 class="card-title">Foro tema 2</h5>
+                                <p class="card-text mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam voluptatum culpa tenetur, ullam consectetur est sequi laboriosam quidem, soluta, et nihil excepturi modi enim harum. Nobis rerum ullam obcaecati.
+                                </p>
+                            </a>
+                            <div class="row">
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-hand-thumbs-up"></i> 10
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-chat-left-fill"></i> 120
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-send-fill"></i> 5
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 mt-3 MD-shadow-box">
+                        <div class="card-body">
+                            <a class="nav-link" href="./forotema1.html">
+                                <h5 class="card-title">Foro tema 3</h5>
+                                <p class="card-text mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam voluptatum culpa tenetur, ullam consectetur est sequi laboriosam quidem, soluta, et nihil excepturi modi enim harum. Nobis rerum ullam obcaecati.
+                                </p>
+                            </a>
+                            <div class="row">
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-hand-thumbs-up"></i> 10
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-chat-left-fill"></i> 120
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-send-fill"></i> 5
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 mt-3 MD-shadow-box">
+                        <div class="card-body">
+                            <a class="nav-link" href="./forotema1.html">
+                                <h5 class="card-title">Foro tema 4</h5>
+                                <p class="card-text mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam voluptatum culpa tenetur, ullam consectetur est sequi laboriosam quidem, soluta, et nihil excepturi modi enim harum. Nobis rerum ullam obcaecati.
+                                </p>
+                            </a>
+                            <div class="row">
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-hand-thumbs-up"></i> 10
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-chat-left-fill"></i> 120
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-send-fill"></i> 5
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 mt-3 MD-shadow-box">
+                        <div class="card-body">
+                            <a class="nav-link" href="./forotema1.html">
+                                <h5 class="card-title">Foro tema 5</h5>
+                                <p class="card-text mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam voluptatum culpa tenetur, ullam consectetur est sequi laboriosam quidem, soluta, et nihil excepturi modi enim harum. Nobis rerum ullam obcaecati.
+                                </p>
+                            </a>
+                            <div class="row">
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-hand-thumbs-up"></i> 10
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-chat-left-fill"></i> 120
+                                </button>
+                                <button type="button" class="col-4 col-sm-2 col-md-1 btn p-sm-1">
+                                    <i class="bi bi-send-fill"></i> 5
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="foro-sidebar-crear">
-                <h2>Crea una discusión</h2>
-                <div>
-                    <input type="text">
-                    <textarea name="discusionescribeuntitulo" id="discusionescribeuntitulo"></textarea>
-                    <button>Publicar</button>
+            <!-- FORO / CONTENIDO / SECCIÓN 2 - HERRAMIENTAS DEL FORO -->
+            <section class="col-12 col-md-4 ps-4 pt-4">
+                <div class="row mb-4">
+                    <h3 class="col-12 mt-4">Buscar</h3>
+                    <form class="col-12">
+                        <div class="row">
+                            <label for="MD-buscar" class="col-12 form-label">Busca una discusión</label>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-10"><input type="text" class="form-control" id="MD-buscar"></div>
+                                    <div class="col-2"><button type="submit" class="btn MD-btn-primary btn-primary mb-2"><i class="bi bi-search"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </section>
-
-            <section class="normasdelacomunidad">
-                <h2>Normas de la comunidad</h2>
-                <p>Texto de las normas de la comunidad</p>
+            <!-- Crear una discusión -->
+                <div class="row">
+                    <h3 class="col-12">Crea una Discusión</h3>
+                    <form class="col-12 p-4 p-sm-3" action="">
+                        <div class="mb-3">
+                            <label for="MD-titulotema" class="form-label">Escribe un Título</label>
+                            <input type="text" class="form-control" id="MD-titulotema">
+                        </div>
+                        <div class="mb-3">
+                            <label for="MD-contenidotema" class="form-label">Dí Algo</label>
+                            <input type="textarea" class="form-control" id="MD-contenidotema">
+                        </div>
+                        <div class="ms-4 d-flex justify-content-end">
+                            <button type="submit" class="col-6 btn MD-btn-primary btn-primary mb-2">Publicar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row m-4 pt-4">
+                    <h4 class="col-12 text-center">Normas de la Comunidad</h4>
+                    <p class="col-12 text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae quam distinctio voluptatem numquam voluptatibus repellat soluta, accusantium placeat minima sunt aperiam praesentium odit porro id? Dolor odio voluptates ipsam.
+                    </p>
+                </div>        
             </section>
         </div>
-    </main>
+    </div>
 
-<!-- Footer ----------------------------------->
-    <footer>
-        <p>Adquiere abducción en los Andes en:</p>
-        <div>
-            <img src="../assets/iconlinksteam.webp" alt="ícono de steam" id="icon-steam">
-            <img src="../assets/iconlinkxbox.png" alt="ícono de xbox" id="icon-xbox">
-            <img src="../assets/iconlinkepic.png" alt="ícono de epic games" id="icon-epic">
+<!-- FORO / FOOTER -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="mt-4 mb-5 MD-footer-texto1">Adquiere Abducción en los Andes en:</p>
+            </div>
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-steam"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-xbox"></i></a>
+                </div>
+                <div>
+                    <a class="nav-link MD-footer-button" href="#"><i class="bi bi-playstation"></i></a>
+                </div>
+            </div>
         </div>
-        <p>Todos los derechos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
