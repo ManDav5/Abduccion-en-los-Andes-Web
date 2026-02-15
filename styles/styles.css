@@ -17,9 +17,10 @@ text-transform: uppercase;
 font-family: "Oswald", sans-serif;
 }
 
-.titulo-home{
-    font-size: 12rem;
-    padding-bottom: 2rem;
+/* titulohome----------------- */
+
+.MD-titulo-home{
+    font-size: 1.5rem;
 }
 
 h2{
@@ -76,16 +77,18 @@ nav{
     color:black;
 }
 
-.main-hero{
+/* main hero-------------------- */
+.MD-main-hero{
     background-color: black;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
-    background-repeat:no-repeat;
-    text-align:left;
-    block-size: 36rem;
+    background-repeat: no-repeat;
+    text-align: left;
+    block-size: 10rem;
     padding-left: 2rem;
+    padding-bottom: 1rem;
     display:flex;
-    align-items: last baseline;
+    align-items: last baseline
 }
 
 .secondary-hero{
@@ -110,128 +113,6 @@ footer{
 .MD-footer-texto1{
     color: rgb(146, 146, 146);
     font-size: 14px;
-}
-
-#icon-steam{
-    width: 32px;
-    height: 32px;
-    color: #B5A8AA;
-    filter: invert(70%);
-}
-
-#icon-xbox{
-    width: 32px;
-    height: 32px;
-    color: #B5A8AA;
-    filter: invert(70%);
-}
-
-#icon-epic{
-    width: 32px;
-    height: 32px;
-    color: #B5A8AA;
-    filter: invert(70%);
-}
-
-#icon-twitter{
-    height: 32px;
-    color: #B5A8AA;
-    filter: invert(30%);    
-}
-
-#icon-google{
-    height: 32px;
-    color: #B5A8AA;
-    filter: invert(30%);
-}
-
-#icon-facebook{
-    height: 44px;
-    color: #B5A8AA;
-    filter: invert(30%);
-}
-
-#icon-comment{
-    height: 32px;
-    color: #B5A8AA;
-    filter: invert(30%);
-}
-
-.nav-numeros{
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
-    align-items: baseline;
-}
-
-.nav-numeros-li{
-    width: 5px;
-    height: 25px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border: #1C0804 solid;
-    border-radius: 50px;
-}
-
-.contenedor-cards{
-       border: #1C0804 solid;
-       border-radius: 30px;
-       padding: 1rem;
-}
-
-.contenedor-cards-card{
-    border: #573731 solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: .5rem;
-}
-
-.like-comment-share{
-    width: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.like-status{
-    width: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.comment-status{
-    width: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.share-status{
-    width: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.main-foro{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "foro-discusiones foro-discusiones foro-sidebar";
-}
-
-.foro-discusiones{
-    grid-area: foro-discusiones;
-}
-
-.foro-sidebar{
-    grid-area: foro-sidebar;
 }
 
 /* Fondo de tabla personalizado--PROFES, ESTO LO GOOGLEE PERO LO APLIQUÉ SIN ENTENDER QUÉ SIGNIFICA ESA PROPIEDAD, Pero funciona. */
@@ -273,4 +154,37 @@ footer{
 .MD-btn-link:hover{
     text-decoration-color:rgb(187, 16, 16);
     color:rgb(187, 16, 16);
+}
+
+.MD-nav-link{
+    color: gray;
+}
+
+/* MEDIA QUERIES---------------------------------------------------------- */
+
+@media(min-width:650px){
+    .MD-titulo-home{
+    font-size: 8rem;
+    padding-bottom: 2rem;
+}
+
+    .MD-main-hero{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    text-align:left;
+    block-size: 36rem;
+    padding-left: 2rem;
+    display:flex;
+    align-items: last baseline;
+}
+
+}
+@media(min-width:1100px){
+    .MD-titulo-home{
+    font-size: 12rem;
+    padding-bottom: 2rem;
+}
+
 }

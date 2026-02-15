@@ -64,37 +64,78 @@
 
 <!-- FORO / CONTENIDO -->
 
-    <div class="container mt-4">
+    <div class="container mt-5">
         <div class="row">
 
-            <!-- FORO / CONTENIDO / SECCIÓN 1 - CARDS DE TEMAS -->
-            <section class="col-12 col-md-8">
+            <!-- FORO / CONTENIDO / SECCIÓN 1 - HERRAMIENTAS DEL FORO -->
+            <section class="col-12 col-md-4 ps-4 pt-4">
+                <div class="row mb-4 mt-4 mb-5">
+                    <h3 class="col-12">Buscar</h3>
+                    <form class="col-12">
+                        <div class="row">
+                            <label for="MD-buscar" class="col-12 form-label">Busca una discusión</label>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-10"><input type="text" class="form-control" id="MD-buscar"></div>
+                                    <div class="col-2"><button type="submit" class="btn MD-btn-primary btn-primary mb-2"><i class="bi bi-search"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            <!-- Crear una discusión -->
+                <div class="row">
+                    <h3 class="col-12">Crea una Discusión</h3>
+                    <form class="col-12 p-4 p-sm-3" action="">
+                        <div class="mb-3">
+                            <label for="MD-titulotema" class="form-label">Escribe un Título</label>
+                            <input type="text" class="form-control" id="MD-titulotema">
+                        </div>
+                        <div class="mb-3">
+                            <label for="MD-contenidotema" class="form-label">Dí Algo</label>
+                            <input type="textarea" class="form-control" id="MD-contenidotema">
+                        </div>
+                        <div class="ms-4 d-flex justify-content-end">
+                            <button type="submit" class="col-6 btn MD-btn-primary btn-primary mb-2">Publicar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row m-4 pt-4">
+                    <h4 class="col-12 text-center">Normas de la Comunidad</h4>
+                    <p class="col-12 text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae quam distinctio voluptatem numquam voluptatibus repellat soluta, accusantium placeat minima sunt aperiam praesentium odit porro id? Dolor odio voluptates ipsam.
+                    </p>
+                </div>        
+            </section>
+
+            <!-- FORO / CONTENIDO / SECCIÓN 2 - CARDS DE TEMAS -->
+            <section class="col-12 col-md-8 mt-5 mb-5">
                 <!-- navegación numérica -->
                 <div class="row">
                     <h2 class="col-6">Discusiones</h2>
-                    <div class="col-6">
+                    <div class="col-6 mt-4 mb-1">
                         <ul class="nav nav-underline mb-2 me-2 justify-content-end">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">1</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">2</a>
+                                <a class="MD-nav-link nav-link" href="#">2</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">3</a>
+                                <a class="MD-nav-link nav-link" href="#">3</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">...</a>
+                                <a class="MD-nav-link nav-link" href="#">...</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">25</a>
+                                <a class="MD-nav-link nav-link" href="#">25</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- contenedor de cards -->
-                <div class="col-12 mb-1 ps-3 pe-3 border rounded MD-shadow-box-2">
+                <div class="col-12 mb-2 ps-3 pe-3 border rounded MD-shadow-box-2">
                     <div class="card mb-3 mt-3 MD-shadow-box">
                         <div class="card-body">
                             <a class="nav-link" href="./forotema1.html">
@@ -202,66 +243,26 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <ul class="nav nav-underline mb-4 me-2 justify-content-end">
+                    <ul class="nav nav-underline mb-5 me-2 justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">2</a>
+                            <a class="MD-nav-link nav-link" href="#">2</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">3</a>
+                            <a class="MD-nav-link nav-link" href="#">3</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">...</a>
+                            <a class="MD-nav-link nav-link" href="#">...</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">25</a>
+                            <a class="MD-nav-link nav-link" href="#">25</a>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <!-- FORO / CONTENIDO / SECCIÓN 2 - HERRAMIENTAS DEL FORO -->
-            <section class="col-12 col-md-4 ps-4 pt-4">
-                <div class="row mb-4">
-                    <h3 class="col-12 mt-4">Buscar</h3>
-                    <form class="col-12">
-                        <div class="row">
-                            <label for="MD-buscar" class="col-12 form-label">Busca una discusión</label>
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-10"><input type="text" class="form-control" id="MD-buscar"></div>
-                                    <div class="col-2"><button type="submit" class="btn MD-btn-primary btn-primary mb-2"><i class="bi bi-search"></i></button></div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            <!-- Crear una discusión -->
-                <div class="row">
-                    <h3 class="col-12">Crea una Discusión</h3>
-                    <form class="col-12 p-4 p-sm-3" action="">
-                        <div class="mb-3">
-                            <label for="MD-titulotema" class="form-label">Escribe un Título</label>
-                            <input type="text" class="form-control" id="MD-titulotema">
-                        </div>
-                        <div class="mb-3">
-                            <label for="MD-contenidotema" class="form-label">Dí Algo</label>
-                            <input type="textarea" class="form-control" id="MD-contenidotema">
-                        </div>
-                        <div class="ms-4 d-flex justify-content-end">
-                            <button type="submit" class="col-6 btn MD-btn-primary btn-primary mb-2">Publicar</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="row m-4 pt-4">
-                    <h4 class="col-12 text-center">Normas de la Comunidad</h4>
-                    <p class="col-12 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae quam distinctio voluptatem numquam voluptatibus repellat soluta, accusantium placeat minima sunt aperiam praesentium odit porro id? Dolor odio voluptates ipsam.
-                    </p>
-                </div>        
-            </section>
         </div>
     </div>
 
