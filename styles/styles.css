@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 
 body{
@@ -25,13 +24,11 @@ font-family: "Oswald", sans-serif;
 
 h2{
     color: black;
-    text-transform: uppercase;
     font-family: "Hind Guntur", sans-serif;
 }
 
 h3{
     color: black;
-    text-transform: capitalize;
 }
 
 p{
