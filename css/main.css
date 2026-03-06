@@ -1,3 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap");
+.MD-main-hero {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: last baseline;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  block-size: 10rem;
+}
+@media (min-width: 650px) {
+  .MD-main-hero {
+    block-size: 36rem;
+  }
+}
 
+.secondary-hero {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: last baseline;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  block-size: 9rem;
+}
+
+nav {
+  background-color: black;
+  opacity: 0.92;
+}
+
+footer {
+  background-color: black;
+  block-size: 16rem;
+}
+footer p {
+  color: rgb(146, 146, 146);
+  font-size: 14px;
+}
+
+.MD-navbar-button, .MD-footer-button {
+  color: whitesmoke;
+  transition: 0.3s;
+}
+.MD-navbar-button:hover, .MD-footer-button:hover {
+  color: rgb(187, 16, 16);
+  font-size: 1.1em;
+}
+.MD-navbar-button.MD-footer-button, .MD-footer-button.MD-footer-button {
+  font-size: 2rem;
+}
+.MD-navbar-button.MD-footer-button:hover, .MD-footer-button.MD-footer-button:hover {
+  font-size: 2.3rem;
+}
+
+.MD-login-socialmedia {
+  font-size: 1.5rem;
+  color: grey;
+}
+.MD-login-socialmedia:hover {
+  color: black;
+}
+
+.MD-btn-primary {
+  background-color: black;
+  border: 1px solid black;
+}
+.MD-btn-primary:hover {
+  background-color: rgb(187, 16, 16);
+  border-color: rgb(187, 16, 16);
+}
+
+.MD-shadow-box {
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.MD-form-box {
+  min-height: 80vh;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.MD-table-requisitos {
+  --bs-table-bg: whitesmoke;
+}
+
+.MD-btn-link {
+  color: black;
+  text-decoration-color: black;
+}
+.MD-btn-link:hover {
+  color: rgb(187, 16, 16);
+  text-decoration: rgb(187, 16, 16);
+}
+
+.MD-nav-link {
+  color: grey;
+}
+.MD-nav-link:hover {
+  color: rgb(187, 16, 16);
+}
+
+h1 {
+  color: rgb(187, 16, 16);
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+h2, h3 {
+  color: black;
+  font-family: "Hind Guntur", sans-serif;
+}
+
+p {
+  color: black;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.MD-titulo-home {
+  font-size: 1.5rem;
+}
+@media (min-width: 650px) {
+  .MD-titulo-home {
+    font-size: 8rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 1100px) {
+  .MD-titulo-home {
+    font-size: 12rem;
+  }
+}
+
+.MD-footer-texto1 {
+  font-size: 14px;
+  color: rgb(146, 146, 146);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Hind Guntur", sans-serif;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,17 @@
-$color-primero:rgb(187, 16, 16);
-$color-segundo:black;
-$color-tercero:grey;
-$color-cuarto:rgb(146, 146, 146);
-$color-quinto:lightgrey;
-$color-fondo: whitesmoke;
+// Colores
+$color-primero:  rgb(187, 16, 16);
+$color-segundo:  black;
+$color-tercero:  grey;
+$color-cuarto:   rgb(146, 146, 146);
+$color-quinto:   lightgrey;
+$color-fondo:    whitesmoke;
 
-$fuente-titulos:"Oswald", sans-serif;
-$fuente-subtitulos:"Hind Guntur", sans-serif;
-$fuente-body:"Hind Guntur", sans-serif;
-$fuente-textos:"Nunito Sans", sans-serif;
+// Fuentes
+$fuente-titulos:    "Oswald", sans-serif;
+$fuente-subtitulos: "Hind Guntur", sans-serif;
+$fuente-body:       "Hind Guntur", sans-serif;
+$fuente-textos:     "Nunito Sans", sans-serif;
+
+// Breakpoints
+$bp-mobile: 650px;
+$bp-desktop: 1100px;

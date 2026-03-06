@@ -1,0 +1,106 @@
+@use 'variables' as *;
+@use 'queries' as *;
+
+@mixin hero-estilo {
+    background-color: $color-segundo;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: last baseline;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+@mixin sombra-estandar {
+    box-shadow: 5px 5px 5px $color-quinto;
+}
+
+.MD-main-hero {
+    @include hero-estilo;
+    block-size: 10rem;
+    @include mobile {
+        block-size: 36rem;
+    }
+}
+
+.secondary-hero {
+    @include hero-estilo;
+    block-size: 9rem;
+}
+
+nav {
+    background-color:$color-segundo;
+    opacity: 0.92;
+}
+
+footer{
+    background-color:$color-segundo;
+    block-size:16rem;
+    p{
+        color:$color-cuarto;
+        font-size: 14px;
+    }
+}
+
+.MD-navbar-button, .MD-footer-button{
+    color:$color-fondo;
+    transition:0.3s;
+    &:hover {
+        color:$color-primero;
+        font-size:1.1em;
+    }
+    &.MD-footer-button{
+        font-size:2rem;
+        &:hover{
+            font-size: 2.3rem;
+        }
+    }
+}
+
+.MD-login-socialmedia{
+    font-size:1.5rem;
+    color:$color-tercero;
+    &:hover{
+        color:$color-segundo;
+    }
+}
+
+.MD-btn-primary{
+    background-color:$color-segundo;
+    border:1px solid $color-segundo;
+    &:hover{
+        background-color:$color-primero;
+        border-color:$color-primero;
+    }
+}
+
+.MD-shadow-box {
+    background-color: $color-fondo;
+    @include sombra-estandar;
+}
+
+.MD-form-box {
+    min-height: 80vh;
+    background-color: $color-fondo;
+    @include sombra-estandar;
+}
+
+.MD-table-requisitos{
+    --bs-table-bg: #{$color-fondo};
+}
+
+.MD-btn-link{
+    color:$color-segundo;
+    text-decoration-color:$color-segundo;
+    &:hover{
+        color:$color-primero;
+        text-decoration: $color-primero;
+    }
+}
+
+.MD-nav-link{
+    color:$color-tercero;
+    &:hover{
+        color:$color-primero;
+    }
+}

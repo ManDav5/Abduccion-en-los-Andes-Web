@@ -1,4 +1,12 @@
-*{
+@use 'variables' as *;
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-fondo;
+    font-family: $fuente-body;
 }
