@@ -72,9 +72,16 @@ footer p {
   border-color: rgb(187, 16, 16);
 }
 
-.MD-shadow-box {
+.MD-shadow-box, .card {
   background-color: whitesmoke;
   box-shadow: 5px 5px 5px lightgrey;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.MD-shadow-box:hover, .card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgb(146, 146, 146);
+  z-index: 10;
+  position: relative;
 }
 
 .MD-form-box {
@@ -103,6 +110,22 @@ footer p {
   color: rgb(187, 16, 16);
 }
 
+@keyframes animacion-mainhero {
+  0% {
+    background-image: url(../assets/fondoh1.webp);
+    color: transparent;
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5) drop-shadow(0 0 10px rgb(187, 16, 16));
+  }
+  100% {
+    background-image: none;
+    background-color: rgb(187, 16, 16);
+    color: rgb(187, 16, 16);
+    filter: brightness(1);
+  }
+}
 h1 {
   color: rgb(187, 16, 16);
   text-transform: uppercase;
@@ -121,6 +144,13 @@ p {
 
 .MD-titulo-home {
   font-size: 1.5rem;
+  background-image: url(../assets/fondoh1.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animacion-mainhero 6s forwards;
 }
 @media (min-width: 650px) {
   .MD-titulo-home {

@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@keyframes animacion-mainhero{
+    0%{
+        background-image:url(../assets/fondoh1.webp);
+        color: transparent;
+        filter: brightness(1);
+    }
+    50%{
+        filter:brightness(1.5) drop-shadow(0 0 10px $color-primero);
+    }
+    100%{
+        background-image: none;
+        background-color: $color-primero;
+        color:$color-primero;
+        filter:brightness(1);
+    }
+}
+

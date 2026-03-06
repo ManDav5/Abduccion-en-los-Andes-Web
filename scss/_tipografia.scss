@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'queries' as*;
+@use 'animaciones' as *;
 
 h1 {
     color:$color-primero;
@@ -19,6 +20,14 @@ p{
 
 .MD-titulo-home{
     font-size: 1.5rem;
+    background-image:url(../assets/fondoh1.webp);
+    background-size:cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip:text;
+    color:transparent;
+    animation: animacion-mainhero 6s forwards;
+
     @include mobile{
         font-size:8rem;
         padding-bottom:2rem;
