@@ -72,16 +72,23 @@ footer p {
   border-color: rgb(187, 16, 16);
 }
 
-.MD-shadow-box, .card {
+.MD-shadow-box, .MD-shadow-box-3, .MD-shadow-box-4 {
   background-color: whitesmoke;
   box-shadow: 5px 5px 5px lightgrey;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.MD-shadow-box:hover, .card:hover {
+.MD-shadow-box:hover, .MD-shadow-box-3:hover, .MD-shadow-box-4:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 20px rgb(146, 146, 146);
   z-index: 10;
   position: relative;
+}
+.MD-shadow-box.MD-shadow-box-3:hover, .MD-shadow-box-3.MD-shadow-box-3:hover, .MD-shadow-box-4.MD-shadow-box-3:hover {
+  transform: scale(1.01);
+}
+.MD-shadow-box.MD-shadow-box-4:hover, .MD-shadow-box-3.MD-shadow-box-4:hover, .MD-shadow-box-4.MD-shadow-box-4:hover {
+  transform: initial;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 
 .MD-form-box {

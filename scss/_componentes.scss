@@ -74,7 +74,7 @@ footer{
     }
 }
 
-.MD-shadow-box, .card {
+.MD-shadow-box, .MD-shadow-box-3, .MD-shadow-box-4{
     background-color: $color-fondo;
     @include sombra-estandar;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -83,6 +83,17 @@ footer{
         box-shadow: 10px 10px 20px $color-cuarto;
         z-index:10;
         position:relative;
+    }
+    &.MD-shadow-box-3{
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+    &.MD-shadow-box-4{
+        &:hover{
+            transform: initial;
+            box-shadow: 5px 5px 5px $color-quinto;
+        }
     }
 }
 
